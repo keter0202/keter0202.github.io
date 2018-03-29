@@ -3,8 +3,9 @@ $(document).ready(function(){
 
 	$(document).ready(function(){
 		$('#fullpage').fullpage({
-			anchors:['firstPage', 'secondPage'],
-			menu: '#nav'
+			anchors:['yi', 'er', 'san', 'si', 'wu'],
+			menu: '#nav',
+			css3: true
 		});
 	})
 });
