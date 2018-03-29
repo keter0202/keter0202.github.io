@@ -31,6 +31,8 @@ a,a:hover{
 #nav>.title{
 	width: 50%;
 	height: 60px;
+	margin: 0;
+	padding: 0;
 	float: left;
 	line-height: 60px;
 	text-indent: 2em;
@@ -59,3 +61,21 @@ a,a:hover{
 #nav>ul>li>a:hover{
 	color: #E87E04;
 }
+/* fullpage */
+#fullpage>.section1>.fp-tableCell>.touxiang{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	margin: auto;
+}
+#fullpage>.section1>.fp-tableCell>p{
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	text-indent: 2em;
+	font-size: 16px;
+	margin: auto;
+}
+/* CSS动画 */
+
