@@ -5,32 +5,32 @@
 </template>
 
 <script>
-  export default {
-    name: 'App',
-    provide () {
-      return {
-        reload: this.reload
-      }
-    },
-    data () {
-      return {
-        isRouterAlive: true
-      }
-    },
-    methods: {
-      // 刷新当前页面
-      reload () {
-        this.isRouterAlive = false
-        this.$nextTick(() => {
-          this.isRouterAlive = true
-        })
-      }
+export default {
+  name: 'App',
+  provide () {
+    return {
+      reload: this.reload
+    }
+  },
+  data () {
+    return {
+      isRouterAlive: true
+    }
+  },
+  methods: {
+    // 刷新当前页面
+    reload () {
+      this.isRouterAlive = false
+      this.$nextTick(() => {
+        this.isRouterAlive = true
+      })
     }
   }
+}
 </script>
 
 <style>
-#app{
+#app {
   font-family: '微软雅黑';
 }
 </style>
