@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    home<br >
-    this is my own website<br >
-    i want everything will be better
     {{note}}
   </div>
 </template>
@@ -13,7 +10,7 @@ export default {
   inject: ['reload'], // 注入依赖，刷新当前页面
   data () {
     return {
-      note: ''
+      note: '那美好的仗我已经打完了，应行的路我已行尽了，当守的道我守住了。从此以后，有公义的冠冕为你留存'
     }
   }
 }
