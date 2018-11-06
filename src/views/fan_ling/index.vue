@@ -10,6 +10,9 @@
                 <img src="../../assets/avatar_fl.jpg">
               </div>
               <p class="title">期待2022北京冬奥会</p>
+              <div class="all-button">
+                <k-button message="photos"></k-button>
+              </div>
             </el-col>
           </el-row>
         </el-col>
@@ -37,8 +40,14 @@
 </template>
 
 <script>
+import kButton from '@/views/fan_ling/k_button'
+
 export default {
   name: 'fanLing',
+  components: {
+    // eslint-disable-next-line
+    kButton
+  },
   data () {
     return {
       view: { // 视图控制
@@ -109,7 +118,7 @@ export default {
   // width: 100%;
   // height: auto;
   font-size: 14px;
-  background-color: #1d3849;
+  background-color: #0d3b6c;
   overflow: hidden;
   .top{
     margin-top: 40px;
@@ -117,11 +126,14 @@ export default {
       width: 80px;
       height: 80px;
       margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 4px;
+      border-radius: 50%;
       img{
         display: block;
         width: 100%;
         height: 100%;
-        border-radius: 100%;
+        border-radius: 50%;
         transition: all .8s;
         cursor: pointer;
         &:hover{
@@ -135,6 +147,11 @@ export default {
       line-height: 80px;
       text-align: center;
       color: #fff;
+    }
+    .all-button{
+      width: 100px;
+      height: auto;
+      margin: 0 auto;
     }
   }
 }
