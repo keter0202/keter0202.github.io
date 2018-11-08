@@ -7,7 +7,7 @@
         </div>
         <div class="message">
           变强<br >
-          寻找灵性
+          寻找灵性...
         </div>
       </el-col>
       <el-col :span="12">
