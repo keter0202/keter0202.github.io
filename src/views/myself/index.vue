@@ -46,6 +46,12 @@ export default {
   created () {
     this.getWidthheight()
   },
+  mounted () {
+    // 监听窗口变化
+    window.onresize = () => {
+      this.getWidthheight()
+    }
+  },
   methods: {
     // 播放
     play () {
